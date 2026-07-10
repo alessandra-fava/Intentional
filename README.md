@@ -27,7 +27,7 @@ riferimento corporeo per mappare i punti raggiungibili).
 
 ```bash
 cd Intentional
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate  # su Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ### Esecuzione
 
 ```bash
-python step1_pose_stream.py
+python3 step1_pose_stream.py
 ```
 
 Dovresti vedere una finestra video con lo scheletro disegnato sopra il tuo
