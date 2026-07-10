@@ -13,7 +13,7 @@ riferimento corporeo per mappare i punti raggiungibili).
       3D reale (in metri) del polso, visualizzazione a schermo.
 - [x] Step 2 — Calibrazione del riferimento corporeo (origine = torace/spalla)
 - [x] Step 3 — Registrazione dataset dei punti raggiunti dalla mano
-- [ ] Step 4 — Server FastAPI + WebSocket per lo streaming dei dati
+- [x] Step 4 — Server FastAPI + WebSocket per lo streaming dei dati
 - [ ] Step 5 — Webapp Three.js: scheletro semplice in tempo reale
 - [ ] Step 6 — Visualizzazione nuvola di punti / workspace accumulato
 
@@ -26,7 +26,7 @@ riferimento corporeo per mappare i punti raggiungibili).
 ### Installazione
 
 ```bash
-cd backend
+cd Intentional
 python -m venv venv
 source venv/bin/activate  # su Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -65,7 +65,7 @@ centrato sul corpo, invece che sulla camera.
 ### Esecuzione
 
 ```bash
-cd backend
+cd Intentional
 source venv/bin/activate
 python step2_body_reference.py
 ```
@@ -88,7 +88,7 @@ essere usato per ricostruire il movimento e il workspace raggiungibile.
 ### Esecuzione
 
 ```bash
-cd backend
+cd Intentional
 source venv/bin/activate
 python step3_record_reachability.py --output recordings/reachability.csv
 ```
@@ -105,7 +105,7 @@ inviare i dati di tracking a una web app in tempo reale.
 ### Esecuzione
 
 ```bash
-cd backend
+cd Intentional
 source venv/bin/activate
 python step4_live_server.py
 ```
