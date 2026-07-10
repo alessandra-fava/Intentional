@@ -128,3 +128,29 @@ dalla futura UI dell'avatar.
 - **z troppo rumoroso**: normale a bordo mani/dita, la depth della D435i è
   meno precisa su superfici piccole/riflettenti; lo affronteremo con un
   filtro (media mobile) in uno step successivo.
+
+
+## DOVE SIAMO ORA
+
+Primo terminale:
+```
+cd Intentional
+source venv/bin/activate
+python3 step4_live_server.py
+```
+
+Sul web:
+```
+http://localhost:8000/
+```
+
+Secondo temrinale:
+```
+cd Intentional
+source venv/bin/activate
+python3 step3_record_reachability.py 
+```
+
+L'avatar si muove ma non in modo corretto, si muove come blocco unico
+
+
